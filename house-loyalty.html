@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>House Loyalty</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+</head>
+
+<header>
+     <!--    NAV BAR    -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand"><i class="fa fa-search" aria-hidden="true"></i> TGIF</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Congress 113</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="senate.html">Senate</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="house.html">House</a>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="senate-attendance.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Attendance</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="senate-attendance.html">Senate</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="house-attendance.html">House</a></li>
+                            </ul>
+                        </li>
+                        <li class="active" class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="senate-loyalty.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Party Loyalty</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="senate-loyalty.html">Senate</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li class="active"><a class="dropdown-item" href="house-loyalty.html">House</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class="fa fa-envelope"> info@tgif.net</a></li>
+                        <!--        <li><a href="#">Login <i class="fa fa-user"></i></a></li>-->
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+</header>
+
+<!--   CONTENT   -->
+
+<body>
+    <div class="text">
+        <h2>Party Loyalty</h2>
+        <p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda.</p>
+        <h3>House at a glance</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Party</td>
+                    <td>No. of Reps</td>
+                    <td>% Voted w/ Party</td>
+                </tr>
+            </thead>
+            <tbody id="at-a-glance">
+
+            </tbody>
+        </table>
+
+
+<!--        <hr>-->
+
+        <div class="container">
+            <div class="floatLeft">
+                <h3>Least Loyal</h3>
+                <h4>(Bottom 10% of Party)</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>No. Party Votes</th>
+                            <th>% Party Votes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="#">
+                    </tbody>
+                </table>
+            </div>
+            <div class="floatRight">
+                <h3>Most Loyal</h3>
+                <h4>(Bottom 10% of Party)</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>No. Party Votes</th>
+                            <th>% Party Votes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="#">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--    LINK TO BOOTSTRAP    -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <script src="js/json-statistics.js"></script>
+</body>
+</html>

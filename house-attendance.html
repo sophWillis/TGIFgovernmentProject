@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>House Attendance</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+</head>
+
+<header>
+    <!--    NAV BAR    -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a href="index.html" class="navbar-brand"><i class="fa fa-search" aria-hidden="true"></i> TGIF</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Congress 113</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="senate.html">Senate</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="house.html">House</a>
+                        </ul>
+                        </li>
+                        <li class="active" class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="senate-attendance.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Attendance</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="senate-attendance.html">Senate</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li class="active"><a class="dropdown-item" href="house-attendance.html">House</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="senate-loyalty.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Party Loyalty</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="senate-loyalty.html">Senate</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="house-loyalty.html">House</a></li>
+                            </ul>
+                        </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" class="fa fa-envelope"> info@tgif.net</a></li>
+                    <!--        <li><a href="#">Login <i class="fa fa-user"></i></a></li>-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</header>
+
+<!--   CONTENT   -->
+
+<body>
+    <div class="text">
+        <h2>Attendance</h2>
+        <p>The Constitution specifies that a majority of members constitutes a quorum to do business in each house. Representatives and senators rarely force the presence of a quorum by demanding quorum calls; thus, in most cases, debates continue even if a majority is not present. The Senate uses roll-call votes; a clerk calls out the names of all the senators, each senator stating "aye" or "no" when his or her name is announced. The House reserves roll-call votes for the most formal matters, as a roll-call of all 435 representatives takes quite some time; normally, members vote by electronic device. In the case of a tie, the motion in question fails. In the Senate, the Vice President may (if present) cast the tiebreaking vote.
+        </p>
+        <h3>House at a glance</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Party</td>
+                    <td>No. of Reps</td>
+                    <td>% Voted w/ Party</td>
+                </tr>
+            </thead>
+            <tbody id="at-a-glance">
+
+            </tbody>
+
+        </table>
+
+<!--<hr>-->
+
+        <div class="container">
+            <div class="floatLeft">
+                <h3>Least Engaged</h3>
+                <h4>(Bottom 10% Attendance)</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>No. Missed Votes</td>
+                            <td>% Missed</td>
+                        </tr>
+                    </thead>
+                    <tbody id="least">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="floatRight">
+                <h3>Most Engaged</h3>
+                <h4>(Bottom 10% Attendance)</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>No. Missed Votes</td>
+                            <td>% Missed</td>
+                        </tr>
+                    </thead>
+                    <tbody id="most">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--    LINK TO BOOTSTRAP    -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <scripts src="json-senate-data.js"></scripts>
+    <script src="js/json-statistics.js"></script>
+    <script src="js/house-most.js"></script>
+    <script src="js/house-least.js"></script>
+    <script src="js/most-engaged.js"></script>
+</body>
+
+</html>

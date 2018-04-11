@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Senators</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAV BAR -->
+
+     <!--    NAV BAR    -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand"><i class="fa fa-search" aria-hidden="true"></i> TGIF</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active" class="nav-item dropdown" >
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Congress 113</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="active"><a class="dropdown-item" href="senate.html">Senate</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="house.html">House</a>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="senate-attendance.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Attendance</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="senate-attendance.html">Senate</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="house-attendance.html">House</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="senate-loyalty.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Party Loyalty</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="senate-loyalty.html">Senate</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="house-loyalty.html">House</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class="fa fa-envelope"> info@tgif.net</a></li>
+                        <!--        <li><a href="#">Login <i class="fa fa-user"></i></a></li>-->
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    <!--   CONTENT   -->
+
+    <div class="text">
+        <h2>Senators</h2>
+        <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.</p>
+    </div>
+
+    <table class="table">
+        <thead>
+
+            <div class="filtercheckbox">
+                <label for="checkboxes">Filter by Party: </label>
+                <lable for="checkbox"> R </lable>
+                <input id="rep" type="checkbox" name="R">
+
+                <lable for="checkbox"> D </lable>
+                <input id="dem" type="checkbox" name="D">
+
+                <lable for="checkbox"> I </lable>
+                <input id="ind" type="checkbox" name="I">
+            </div>
+            <div class="filteroption">
+                <label for="dropdown">Filter by State: </label>
+                <select id="filter-state" class="filter"> 
+                  <option value="ALL">All</option>
+<!--
+                  <option value="TN">TN</option>
+                  <option value="WI">WI</option>
+                  <option value="WY">WY</option>
+                  <option value="CO">CO</option>      
+-->
+            </select>
+                <tr>
+                    <td>Name</td>
+                    <td>Party</td>
+                    <td>State</td>
+                    <td>Years in Office</td>
+                    <td>% Votes w/ Party</td>
+                </tr>
+
+                <tbody id="tbody-outlet">
+
+                </tbody>
+            </div>
+        </thead>
+    </table>
+
+    <!--   FOOTER   -->
+<!--
+    <footer class="navbar-default navbar-fixed-bottom">
+        <div class="container-fluid">
+            <span>&#169; 2016 TGIF | All Rights Reserved</span>
+        </div>
+    </footer>
+-->
+    
+    <!--    LINK TO BOOTSTRAP    -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!--    CUSTOM JAVASCRIPT    -->
+    <script src="js/json-senate-data.js"></script>
+    <script src="js/table-data.js"></script>
+</body>
+</html>

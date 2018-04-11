@@ -1,0 +1,113 @@
+.table {
+    text-align: center;
+    table-layout: center;
+}
+
+.text {
+    margin: 40px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    float: right;
+}
+
+label {
+    margin:40px;
+}
+
+html {
+    height: 100000px;
+}
+
+body {
+    border: 20px solid #de975d;
+    font-family: 'Quicksand', sans-serif;
+    height:100%;
+    overflow: scroll;
+}
+
+form {border: 10px solid #de975d;border: 10px solid #de975d;
+    
+}
+
+center {
+    text-align: center;
+}
+
+.filtercheckbox {
+    display: inline;
+}
+
+.filteroption {
+    float: right;
+    margin-right: 40px;
+    display: inline;
+}
+
+.long-text {
+	display: none
+}
+
+.container {
+    overflow: hidden;
+    padding-left: 0;
+    padding-top: 20px;
+}
+
+hr {
+  
+}
+
+.floatRight {
+    width: 50%;
+    float: right;
+}
+
+.floatLeft {
+    width: 50%;
+    float: left;
+}
+
+.navbar-default .navbar-nav > .active{
+    color: #000;
+    background: #d65c14;
+}
+/*
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background: #de975d;
+}
+*/
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+            background-image:none !important;
+            color: white;
+ }
+ .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+            background-color: #de975d;
+ }
+
+.navbar-default .navbar-nav > li > a:hover,.navbar-default .navbar-nav > li > a:focus {
+    background-color: #de975d;
+    color: white;
+}
+
+.btn-primary, .btn-primary:hover, btn-primary:active, .btn-primary:visited {
+    background-color: #de975d !important;
+    border-color: #de975d !important;
+}
+
+.btn-primary[aria-expanded=false]:before {
+  content:"Read More";
+}
+
+.btn-primary[aria-expanded=true]:before {
+  content:"Read Less";
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+    background-color: #de975d !important;
+}
